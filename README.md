@@ -73,11 +73,11 @@ Large Language Models (LLMs) demonstrate strong capabilities in broad knowledge 
 
 ## :mag: Overview
 
-<img src="docs/images/xsam_framework.png" width="800">
+<img src="docs/srcs/images/framework.png" width="800">
 
 ## :bar_chart: Benchmarks
 
-Please refer to the [Benchmark Results](docs/benchmark_results.md) for more details.
+Please refer to the [Benchmark Results](docs/mds/benchmark.md) for more details.
 
 ## :checkered_flag: Getting Started
 ### 1. Structure
@@ -183,7 +183,7 @@ pip install aria2
 </details>
 
 ### 3. Preparing
-There are many datasets and models to prepare, please refer to [Dataset Preparing](docs/dataset_preparing.md) and [Model Preparing](docs/model_preparing.md) for more details.
+There are many datasets and models to prepare, please refer to [Datasets](docs/mds/datasets.md) and [Models](docs/mds/models.md) for more details.
 
 ### 4. Training & Evaluation
 :sparkles: **One Script for All !**
@@ -195,7 +195,7 @@ bash runs/run.sh --modes MODES --config CONFIG_FILE --work-dir WORK_DIR --suffix
 # Read the runs/run.sh for more details.
 # debug mode: export DEBUG_MODE=true
 ```
-Prepare the [Datasets](docs/dataset_preparing.md) and [Models](docs/model_preparing.md), and then refer to the following commands to start training and evaluation.
+Prepare the [Datasets](docs/mds/datasets.md) and [Models](docs/mds/models.md), and then refer to the following commands to start training and evaluation.
 
 
 #### X-SAM
@@ -327,11 +327,14 @@ This project has referenced some excellent open-sourced repos ([xtuner](https://
 If you find X-SAM is helpful for your research or applications, please consider giving us a star 🌟 and citing it by the following BibTex entry.
 
 ```bibtex
-@article{wang2025xsam,
-  title={X-SAM: From Segment Anything to Any Segmentation},
+@inproceedings{wang2026xsam,
+  title={X-SAM: From segment anything to any segmentation},
   author={Wang, Hao and Qiao, Limeng and Jie, Zequn and Huang, Zhijian and Feng, Chengjian and Zheng, Qingfang and Ma, Lin and Lan, Xiangyuan and Liang, Xiaodan},
-  journal={arXiv preprint arXiv:2508.04655},
-  year={2025}
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={40},
+  number={31},
+  pages={26187--26196},
+  year={2026}
 }
 ```
 
